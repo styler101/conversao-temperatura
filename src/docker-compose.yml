@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app: 
+   image: "node:20-alpine3.17"
+   container_name: conversor_temperatura
+   ports:
+     - 8080:8080
+   command: npm run dev
+   working_dir: ./
+   
